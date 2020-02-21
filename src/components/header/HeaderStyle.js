@@ -28,11 +28,18 @@ export const HeaderDiv = styled.div`
     background-color: black;
     /* opacity: 50%; */
     color: white;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
+    /* display: flex; */
+    /* flex-flow: row wrap; */
+    /* justify-content: space-between; */
     align-items: center;
     border-bottom: 1px solid white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width: 560px)
+    {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
 `;
 
 export const HeaderH2 = styled.h2`
@@ -49,7 +56,10 @@ export const HeaderH2 = styled.h2`
     }
     @media (max-width: 560px)
     {
-        margin-left: 10px;
+        :last-child
+        {
+            margin-bottom: 10px;
+        }
     }
 `;
 
@@ -58,13 +68,17 @@ export const NavDiv = styled.div`
     margin-right: 20px;
     display: flex;
     justify-content: space-between;
+    justify-self: center;
     @media (max-width: 750px)
     {
         width: 250px;
     }
     @media (max-width: 560px)
     {
-        width: 220px;
+        width: 180px;
+        grid-row-start: 2;
+        
+        justify-content: space-around;
     }
 `;
 
@@ -73,6 +87,7 @@ export const ContactDiv = styled.div`
     margin-right: 20px;
     display: flex;
     justify-content: space-between;
+    justify-self: end;
     a {
         color: white;
         text-decoration: none;
@@ -85,16 +100,47 @@ export const ContactDiv = styled.div`
     {
         width: 90px;
         margin-right: 10px;
+        grid-row-start: 2;
+        justify-self: center;
+        margin-bottom: 5px;
     }
 `;
 
 export const ContactImg = styled.img`
     height: 25px;
     width: 25px;
+    @media (max-width: 600px)
+    {
+        height: 20px;
+        width: 20px;
+    }
 `;
 
 export const NameTitleDiv = styled.div`
     display: flex;
     flex-flow: column;
     justify-content: center;
+    @media (max-width: 560px)
+    {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        /* justify-self: end; */
+        /* :last-child
+        {
+            justify-self: start;
+        } */
+    }
+`;
+
+export const NavAndContact = styled.div`
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 560px)
+    {
+        grid-row-start: 2;
+    }
 `;

@@ -7,6 +7,7 @@ import {
     ContactDiv, 
     ContactImg, 
     NameTitleDiv,
+    NavAndContact
 } from './HeaderStyle'
 
 
@@ -22,7 +23,7 @@ const Header = () =>
                 <StyledNavLink exact to="/" activeClassName="active-nav">About Me</StyledNavLink>
                 <StyledNavLink to="/skills" activeClassName="active-nav">Skills</StyledNavLink>
                 <StyledNavLink to="/projects" activeClassName="active-nav">Projects</StyledNavLink>
-                <StyledNavLink to="/resume" activeClassName="active-nav">Resume</StyledNavLink>
+                {/* <StyledNavLink to="/resume" activeClassName="active-nav">Resume</StyledNavLink> */}
             </NavDiv>
             <ContactDiv>
                 <a href="https://www.linkedin.com/in/eli-sacks"><ContactImg src='assets/images/LI-In-Bug.png'/></a>
