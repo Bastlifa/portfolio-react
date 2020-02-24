@@ -64,3 +64,11 @@ export const ProjectImg = styled.img`
         width: 300px;
     }
 `;
+
+export const TitleA = styled.a`
+    text-decoration: underline;
+    &:hover
+    {
+        color: lightgray;
+    }
+`;

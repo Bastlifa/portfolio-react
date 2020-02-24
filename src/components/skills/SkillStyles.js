@@ -14,23 +14,23 @@ export const SkillCard = styled.div`
     display: flex;
     flex-flow: column nowrap;
     border: 3px solid white;
-    border-radius: 4px;
+    border-radius: 6px;
     color: white;
     align-items: center;
     background-color: rgb(70,70,70);
     width: 150px;
-    height: 140px;
+    height: 90px;
     text-align: center;
     margin: 5px;
     justify-content: space-around;
     h3
     {
-        margin: 5px auto 5px auto;
+        margin: 0px auto -5px auto;
     }
     @media (max-width: 1000px)
     {
         width: 100px;
-        height: 100px;
+        height: 80px;
         h3
         {
             font-size: 14px;

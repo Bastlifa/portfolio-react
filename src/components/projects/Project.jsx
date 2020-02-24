@@ -1,5 +1,5 @@
 import React from "react"
-import { ProjectCard, ProjectImg, LinksDiv, TitleAndLinks } from './ProjectStyles'
+import { ProjectCard, ProjectImg, LinksDiv, TitleAndLinks, TitleA } from './ProjectStyles'
 import { ContactImg } from '../header/HeaderStyle'
 
 const Project = (props) =>
@@ -8,7 +8,12 @@ const Project = (props) =>
     return (
         <ProjectCard>
             <TitleAndLinks>
-                <h3>{project.name}</h3>
+                <TitleA 
+                    href={project.liveSiteURL} 
+                    style={{textDecoration: 'underline'}}
+                    target="_blank" rel="noopener noreferrer">
+                    <h3>{project.name}</h3>
+                </TitleA>
                 <LinksDiv>
                     {project.secondRepoURL ?
                         <>
@@ -33,9 +38,7 @@ const Project = (props) =>
                         </a>}
                 </LinksDiv>
             </TitleAndLinks>
-            <a href={project.liveSiteURL} target="_blank" rel="noopener noreferrer">
                 <ProjectImg src={project.imgsrc} alt={`${project.name} live site`} />
-            </a>
             <div>
                 {project.description.map((el, ind) =>
                 {

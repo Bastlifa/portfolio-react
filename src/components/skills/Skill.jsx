@@ -13,17 +13,17 @@ const Skill = (props) =>
     // library.add(fab)
     const { skill } = props
     const [size, setSize] = useState(['2x', 28])
-    const handleResize = () =>
-    {
-        if(window.innerWidth > 1000) setSize(['2x', 28])
-        else setSize(['1x', 16])
-    }
+    // const handleResize = () =>
+    // {
+    //     if(window.innerWidth > 1000) setSize(['2x', 28])
+    //     else setSize(['1x', 16])
+    // }
 
-    useEffect(_ =>
-    {
-        window.addEventListener('resize', handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-    }, [])
+    // useEffect(_ =>
+    // {
+    //     window.addEventListener('resize', handleResize)
+    //     return () => window.removeEventListener('resize', handleResize)
+    // }, [])
 
     const rankDots = (rank) =>
     {
@@ -57,9 +57,9 @@ const Skill = (props) =>
         <SkillDiv>
             <SkillCard>
                 <h3>{skill.name}</h3>
-                <div style={{display: 'flex'}}>
+                {/* <div style={{display: 'flex'}}>
                     {rankDots(skill.skillRank)}
-                </div>
+                </div> */}
                 {(() =>{
                     if(skill.imageSrc)
                     {
