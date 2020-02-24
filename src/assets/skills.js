@@ -3,8 +3,7 @@ export const skills =
     {
         name: 'GitHub',
         imageSrc: '',
-        // faClass: 'fab fa-github-square',
-        faClass: 'github',
+        faClass: 'github-square',
         skillRank: 3,
         importance: 4,
         projects: [],
@@ -12,7 +11,7 @@ export const skills =
     {
         name: 'JavaScript',
         imageSrc: '',
-        faClass: 'fab fa-js',
+        faClass: 'js',
         skillRank: 4.5,
         importance: 9,
         projects: []
@@ -20,7 +19,7 @@ export const skills =
     {
         name: 'ReactJS',
         imageSrc: '',
-        faClass: 'fab fa-react',
+        faClass: 'react',
         skillRank: 4,
         importance: 10,
         projects: []
@@ -37,7 +36,7 @@ export const skills =
     {
         name: 'HTML5',
         imageSrc: '',
-        faClass: 'fab fa-html5',
+        faClass: 'html5',
         skillRank: 4,
         importance: 7,
         projects: []
@@ -45,7 +44,7 @@ export const skills =
     {
         name: 'CSS',
         imageSrc: '',
-        faClass: 'fab fa-css3-alt',
+        faClass: 'css3-alt',
         skillRank: 4,
         importance: 8,
         projects: []
@@ -53,7 +52,7 @@ export const skills =
     {
         name: 'Python',
         imageSrc: '',
-        faClass: 'fab fa-python',
+        faClass: 'python',
         skillRank: 3.5,
         importance: 7,
         projects: []
@@ -61,7 +60,7 @@ export const skills =
     {
         name: 'Node.js',
         imageSrc: '',
-        faClass: 'fab fa-node',
+        faClass: 'node',
         skillRank: 3.5,
         importance: 8,
         projects: []
@@ -104,7 +103,7 @@ export const skills =
     {
         name: 'SASS',
         imageSrc: '',
-        faClass: 'fab fa-sass',
+        faClass: 'sass',
         skillRank: 2,
         importance: 5,
         projects: []
@@ -112,7 +111,7 @@ export const skills =
     {
         name: 'LESS',
         imageSrc: '',
-        faClass: 'fab fa-less',
+        faClass: 'less',
         skillRank: 3,
         importance: 5,
         projects: []
