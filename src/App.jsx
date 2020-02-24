@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom'
 import Header from './components/header/Header'
 import AboutMe from './components/about-me/AboutMe';
 import Skills from './components/skills/Skills'
+import Projects from './components/projects/Projects'
 // import Resume from './components/resume/Resume';
 
 
@@ -14,6 +15,7 @@ function App() {
             <Header />
             <Route exact path="/" component={AboutMe} />
             <Route exact path="/skills" component={Skills} />
+            <Route exact path="/projects" component={Projects} />
             
             {/* <Route path="/resume" component={Resume} /> */}
         </div>
