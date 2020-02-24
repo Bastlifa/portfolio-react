@@ -27,8 +27,8 @@ export const skills =
     {
         name: 'Express.js',
         imageSrc: '',
-        faClass: '',
-        text: 'Express',
+        fas: 'server',
+        // text: 'Express',
         skillRank: 4,
         importance: 8,
         projects: []
@@ -76,8 +76,7 @@ export const skills =
     {
         name: 'SQLite3',
         imageSrc: '',
-        faClass: '',
-        text: 'SQLite',
+        fas: 'database',
         skillRank: 3.5,
         importance: 8,
         projects: []
@@ -85,8 +84,8 @@ export const skills =
     {
         name: 'Knex.js',
         imageSrc: '',
-        faClass: '',
-        text: 'Knex',
+        fas: 'code',
+        // text: 'Knex',
         skillRank: 4,
         importance: 5,
         projects: []
@@ -94,8 +93,8 @@ export const skills =
     {
         name: 'Jest',
         imageSrc: '',
-        faClass: '',
-        text: 'Jest',
+        fas: 'code',
+        // text: 'Jest',
         skillRank: 2,
         importance: 7,
         projects: []
@@ -119,8 +118,8 @@ export const skills =
     {
         name: 'Blockchain',
         imageSrc: '',
-        faClass: '',
-        text: 'BC',
+        fas: 'code',
+        // text: 'BC',
         skillRank: 1.5,
         importance: 1,
         projects: []
@@ -128,8 +127,8 @@ export const skills =
     {
         name: 'Material-UI',
         imageSrc: '',
-        faClass: '',
-        text: 'MUI',
+        fas: 'border-style',
+        // text: 'MUI',
         skillRank: 3.5,
         importance: 6,
         projects: []
@@ -137,8 +136,8 @@ export const skills =
     {
         name: 'Bulma',
         imageSrc: '',
-        faClass: '',
-        text: 'Bulma',
+        fas: 'border-style',
+        // text: 'Bulma',
         skillRank: 2,
         importance: 6,
         projects: []
@@ -146,8 +145,8 @@ export const skills =
     {
         name: 'styled-components',
         imageSrc: '',
-        faClass: '',
-        text: 'styled-components',
+        fas: 'border-style',
+        // text: 'styled-components',
         skillRank: 4,
         importance: 6,
         projects: []
@@ -155,8 +154,8 @@ export const skills =
     {
         name: 'Django',
         imageSrc: '',
-        faClass: '',
-        text: 'Django',
+        fas: 'database',
+        // text: 'Django',
         skillRank: 1,
         importance: 7,
         projects: []
@@ -164,8 +163,8 @@ export const skills =
     {
         name: 'Redux',
         imageSrc: '',
-        faClass: '',
-        text: 'Redux',
+        fas: 'code',
+        // text: 'Redux',
         skillRank: 4.5,
         importance: 8,
         projects: []
@@ -173,8 +172,8 @@ export const skills =
     {
         name: 'testing-library/react',
         imageSrc: '',
-        faClass: '',
-        text: 'testing-library/react',
+        fas: 'code',
+        // text: 'testing-library/react',
         skillRank: 2.5,
         importance: 8,
         projects: []
@@ -182,7 +181,7 @@ export const skills =
     {
         name: 'apidoc',
         imageSrc: '',
-        faClass: '',
+        fas: 'code',
         text: 'apidoc',
         skillRank: 3.5,
         importance: 7,
@@ -191,8 +190,8 @@ export const skills =
     {
         name: 'Formik',
         imageSrc: '',
-        faClass: '',
-        text: 'Formik',
+        fas: 'code',
+        // text: 'Formik',
         skillRank: 3,
         importance: 6,
         projects: []
@@ -200,8 +199,8 @@ export const skills =
     {
         name: 'Data Structures',
         imageSrc: '',
-        faClass: '',
-        text: 'Data Structures',
+        fas: 'code',
+        // text: 'Data Structures',
         skillRank: 4,
         importance: 8,
         projects: []
@@ -209,8 +208,8 @@ export const skills =
     {
         name: 'Algorithms',
         imageSrc: '',
-        faClass: '',
-        text: 'Algorithms',
+        fas: 'code',
+        // text: 'Algorithms',
         skillRank: 3.5,
         importance: 8,
         projects: []

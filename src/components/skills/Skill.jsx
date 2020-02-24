@@ -1,16 +1,29 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import { SkillDiv, SkillCard } from './SkillStyles'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
 import { RankFull, RankEmpty, RankHalfFull, RankHalfEmpty } from './SkillStyles'
 
-library.add(fab)
+library.add(fab, fas)
 
 const Skill = (props) =>
 {
-    library.add(fab)
+    // library.add(fab)
     const { skill } = props
+    const [size, setSize] = useState('2x')
+    const handleResize = () =>
+    {
+        if(window.innerWidth > 1000) setSize('2x')
+        else setSize('1x')
+    }
+
+    useEffect(_ =>
+    {
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
 
     const rankDots = (rank) =>
     {
@@ -19,13 +32,13 @@ const Skill = (props) =>
         {
             if(rank >= 1)
             {
-                rankArr.push(<RankFull />)
+                rankArr.push(<RankFull key={rankArr.length}/>)
                 rank--
             }
             else if(rank === 0.5)
             {
                 rankArr.push(
-                    <div style={{display: 'flex'}}>
+                    <div style={{display: 'flex'}} key={rankArr.length}>
                         <RankHalfFull/>
                         <RankHalfEmpty/>
                     </div>
@@ -34,7 +47,7 @@ const Skill = (props) =>
             }
             else
             {
-                rankArr.push(<RankEmpty/>)
+                rankArr.push(<RankEmpty key={rankArr.length}/>)
             }
         }
         return rankArr
@@ -52,7 +65,7 @@ const Skill = (props) =>
                     {
                         return (
                             <img 
-                                style={{height: "40px", width: "40px"}}
+                                style={{height: "32px", width: "32px"}}
                                 src={skill.imageSrc} 
                                 alt={`icon for ${skill.name}`} 
                             />
@@ -60,9 +73,21 @@ const Skill = (props) =>
                     }
                     else if(skill.faClass)
                     {
-                        return <FontAwesomeIcon icon={['fab', skill.faClass]} size='3x' color='white'/>
+                        return <FontAwesomeIcon 
+                            icon={['fab', skill.faClass]} 
+                            color='white'
+                            size={size}
+                        />
                     }
-                    return <p>{skill.text}</p>
+                    else if(skill.fas)
+                    {
+                        return <FontAwesomeIcon 
+                            icon={['fas', skill.fas]} 
+                            color='white'
+                            size={size}
+                        />
+                    }
+                    return //<p>{skill.text}</p>
                 })()}
             </SkillCard>
         </SkillDiv>

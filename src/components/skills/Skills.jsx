@@ -24,7 +24,7 @@ const Skills = () =>
             {skills && skills.sort((a,b) => b.importance - a.importance).map(el =>
             {
                 return (
-                    <Skill skill={el} />
+                    <Skill skill={el} key={el.name} />
                 )
             })}
         </SkillsDiv>

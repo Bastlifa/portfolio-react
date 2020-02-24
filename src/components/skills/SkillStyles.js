@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 
 export const SkillsDiv = styled.div`
     /* display: grid;
@@ -16,13 +15,27 @@ export const SkillCard = styled.div`
     flex-flow: column nowrap;
     border: 3px solid white;
     border-radius: 4px;
-    color: black;
+    color: white;
     align-items: center;
-    background-color: lightgray;
+    background-color: rgb(70,70,70);
     width: 150px;
     height: 140px;
     text-align: center;
     margin: 5px;
+    justify-content: space-around;
+    h3
+    {
+        margin: 5px auto 5px auto;
+    }
+    @media (max-width: 1000px)
+    {
+        width: 100px;
+        height: 100px;
+        h3
+        {
+            font-size: 14px;
+        }
+    }
 `;
 
 export const SkillDiv = styled.div`
@@ -33,38 +46,63 @@ export const RankFull = styled.div`
     background-color: yellow;
     border: 2px solid black;
     border-radius: 50%;
-    height: 14px;
-    width: 14px;
+    height: 16px;
+    width: 16px;
     margin: 1px;
+    @media (max-width: 1000px)
+    {
+        height: 8px;
+        width: 8px;
+    }
 `;
 
 export const RankEmpty = styled.div`
     background-color: black;
     border: 2px solid gray;
     border-radius: 50%;
-    height: 14px;
-    width: 14px;
+    height: 16px;
+    width: 16px;
     margin: 1px;
+    @media (max-width: 1000px)
+    {
+        height: 8px;
+        width: 8px;
+    }
 `;
 
 export const RankHalfFull = styled.div`
     background-color: yellow;
     border: 2px solid black;
-    border-top-left-radius: 14px;
-    border-bottom-left-radius: 14px;
-    height: 14px;
-    width: 7px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    height: 16px;
+    width: 8px;
     margin: 1px 0 1px 1px;
     border-right: none;
+    @media (max-width: 1000px)
+    {
+        height: 8px;
+        width: 4px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
 `;
 
 export const RankHalfEmpty = styled.div`
     background-color: black;
     border: 2px solid black;
-    border-top-right-radius: 14px;
-    border-bottom-right-radius: 14px;
-    height: 14px;
-    width: 7px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    height: 16px;
+    width: 8px;
     margin: 1px 1px 1px 0;
     border-left: none;
+    @media (max-width: 1000px)
+    {
+        height: 8px;
+        width: 4px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
 `;
+

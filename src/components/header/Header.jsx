@@ -7,7 +7,6 @@ import {
     ContactDiv, 
     ContactImg, 
     NameTitleDiv,
-    NavAndContact
 } from './HeaderStyle'
 
 
