@@ -12,11 +12,11 @@ const Skill = (props) =>
 {
     // library.add(fab)
     const { skill } = props
-    const [size, setSize] = useState('2x')
+    const [size, setSize] = useState(['2x', 28])
     const handleResize = () =>
     {
-        if(window.innerWidth > 1000) setSize('2x')
-        else setSize('1x')
+        if(window.innerWidth > 1000) setSize(['2x', 28])
+        else setSize(['1x', 16])
     }
 
     useEffect(_ =>
@@ -65,7 +65,7 @@ const Skill = (props) =>
                     {
                         return (
                             <img 
-                                style={{height: "32px", width: "32px"}}
+                                style={{height: `${size[1]}px`, width: `${size[1]}px`}}
                                 src={skill.imageSrc} 
                                 alt={`icon for ${skill.name}`} 
                             />
@@ -76,7 +76,7 @@ const Skill = (props) =>
                         return <FontAwesomeIcon 
                             icon={['fab', skill.faClass]} 
                             color='white'
-                            size={size}
+                            size={size[0]}
                         />
                     }
                     else if(skill.fas)
@@ -84,7 +84,7 @@ const Skill = (props) =>
                         return <FontAwesomeIcon 
                             icon={['fas', skill.fas]} 
                             color='white'
-                            size={size}
+                            size={size[0]}
                         />
                     }
                     return //<p>{skill.text}</p>
