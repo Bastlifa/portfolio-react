@@ -12,22 +12,28 @@ const Project = (props) =>
                 <LinksDiv>
                     {project.secondRepoURL ?
                         <>
-                            <a href="https://github.com/Bastlifa">
+                            <a href={project.repoURL} target="_blank" rel="noopener noreferrer">
                                 FE <ContactImg src='assets/images/Github-Mark-Light-120px-plus.png'/>
                             </a>
-                            <a href="https://github.com/Bastlifa">
+                            <a href={project.secondRepoURL} target="_blank" rel="noopener noreferrer">
                                 BE <ContactImg src='assets/images/Github-Mark-Light-120px-plus.png'/>
                             </a>
                         </>
                         :
-                        <a href="https://github.com/Bastlifa">
+                        <a href={project.repoURL} target="_blank" rel="noopener noreferrer">
                             <ContactImg src='assets/images/Github-Mark-Light-120px-plus.png'/>
                         </a>
                     }
-                    {project.docsURL && <a href={project.docsURL} alt={`api docs for ${project.name}`}>API Docs</a>}
+                    {project.docsURL && <a 
+                            href={project.docsURL} 
+                            alt={`api docs for ${project.name}`}
+                            target="_blank" rel="noopener noreferrer"
+                        >
+                            API Docs
+                        </a>}
                 </LinksDiv>
             </TitleAndLinks>
-            <a href={project.liveSiteURL}>
+            <a href={project.liveSiteURL} target="_blank" rel="noopener noreferrer">
                 <ProjectImg src={project.imgsrc} alt={`${project.name} live site`} />
             </a>
             <div>

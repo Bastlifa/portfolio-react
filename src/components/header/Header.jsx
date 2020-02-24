@@ -25,9 +25,9 @@ const Header = () =>
                 {/* <StyledNavLink to="/resume" activeClassName="active-nav">Resume</StyledNavLink> */}
             </NavDiv>
             <ContactDiv>
-                <a href="https://www.linkedin.com/in/eli-sacks"><ContactImg src='assets/images/LI-In-Bug.png'/></a>
-                <a href="https://github.com/Bastlifa"><ContactImg src='assets/images/Github-Mark-Light-120px-plus.png'/></a>
-                <a href="mailto:elisacksdev@gmail.com"><ContactImg src='assets/images/Mail.png' /></a>
+                <a href="https://www.linkedin.com/in/eli-sacks" target="_blank" rel="noopener noreferrer"><ContactImg src='assets/images/LI-In-Bug.png'/></a>
+                <a href="https://github.com/Bastlifa" target="_blank" rel="noopener noreferrer"><ContactImg src='assets/images/Github-Mark-Light-120px-plus.png'/></a>
+                <a href="mailto:elisacksdev@gmail.com" target="_blank" rel="noopener noreferrer"><ContactImg src='assets/images/Mail.png' /></a>
             </ContactDiv>
         </HeaderDiv>
     )
