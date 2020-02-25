@@ -20,8 +20,8 @@ const Header = () =>
             </NameTitleDiv>
             <NavDiv>
                 <StyledNavLink exact to="/" activeClassName="active-nav">About Me</StyledNavLink>
-                <StyledNavLink to="/skills" activeClassName="active-nav">Skills</StyledNavLink>
                 <StyledNavLink to="/projects" activeClassName="active-nav">Projects</StyledNavLink>
+                <StyledNavLink to="/skills" activeClassName="active-nav">Skills</StyledNavLink>
                 {/* <StyledNavLink to="/resume" activeClassName="active-nav">Resume</StyledNavLink> */}
             </NavDiv>
             <ContactDiv>

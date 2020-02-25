@@ -14,6 +14,7 @@ export const SkillCard = styled.div`
     display: flex;
     flex-flow: column nowrap;
     border: 3px solid white;
+    border-color: ${props => props.borderCol};
     border-radius: 6px;
     color: white;
     align-items: center;
@@ -106,3 +107,25 @@ export const RankHalfEmpty = styled.div`
     }
 `;
 
+export const ReposDiv = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    @media (max-width: 800px)
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 600px)
+    {
+        grid-template-columns: 1fr;
+    }
+    p
+    {
+        justify-self: center;
+        
+    }
+`;
+
+export const StyledRepoLink = styled.a`
+    color: white;
+`;
