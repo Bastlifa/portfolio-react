@@ -1,7 +1,7 @@
 export const projects =
 [
     {
-        name: 'Didact Front End',
+        name: 'Didact',
         repoURL: 'https://github.com/Lambda-School-Labs/didact-fe',
         secondRepoURL: 'https://github.com/Lambda-School-Labs/didact-be',
         docsURL: 'https://didactlms.herokuapp.com/api/docs/',
