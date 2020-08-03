@@ -11,8 +11,9 @@ library.add(fab, fas)
 const Skill = (props) =>
 {
     const { skill, setAllSelected } = props
-    const [size, setSize] = useState(['2x', 28])
-
+    // const [size, setSize] = useState(['2x', 28])
+    const size = ['2x', 28]
+    
     const [selected, setSelected] = useState(false)
 
     const handleSelect = _ =>

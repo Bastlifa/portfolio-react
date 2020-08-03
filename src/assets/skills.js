@@ -746,7 +746,6 @@ export const repos =
         'HTML5': true,
         'CSS': true,
         'LESS': true,
-        'GitHub': true,
     },
     // {
     //     name: '',
